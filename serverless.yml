@@ -1,0 +1,113 @@
+service: procurment
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  stage: dev
+  timeout: 15
+  runtime: nodejs14.x
+  region: us-east-1
+
+functions:
+  AddRequest:
+    handler: add_request.add_request 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  DeleteRequest:
+    handler: delete_request.delete_request 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  GetAllRequest:
+    handler: get_all_request.get_all_request 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  SearchRequest:
+    handler: search_request.search_request 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  UpdateRequest:
+    handler: upadte_request.upadte_request 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+
+
+  AddSupplier:
+    handler: add_supplier.add_supplier 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  DeleteSupplier:
+    handler: delete_supplier.delete_supplier 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  GetAllSupplier:
+    handler: get_all_supplier.get_all_supplier 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  SearchSupplier:
+    handler: search_supplier.search_supplier 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  UpdateSupplier:
+    handler: upadte_supplier.upadte_supplier 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+
+
+
+  AddProduct:
+    handler: add_product.add_product 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  DeleteProduct:
+    handler: delete_product.delete_product 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  GetAllProduct:
+    handler: get_all_product.get_all_product 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  SearchProduct:
+    handler: search_product.search_product 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  UpdateProduct:
+    handler: upadte_product.upadte_product 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+
+  AddCurrency:
+    handler: add_currency.add_currency 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  DeleteCurrency:
+    handler: delete_currency.delete_currency 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  GetAllCurrency:
+    handler: get_all_currency.get_all_currency 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  SearchCurrency:
+    handler: search_currency.search_currency 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  UpdateCurrency:
+    handler: upadte_currency.upadte_currency 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+
+  AddInvoice:
+    handler: add_invoice.add_invoice 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  DeleteInvoice:
+    handler: delete_invoice.delete_invoice 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  GetAllInvoice:
+    handler: get_all_invoice.get_all_invoice 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  SearchInvoice:
+    handler: search_invoice.search_invoice 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  UpdateInvoice:
+    handler: upadte_invoice.upadte_invoice 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+
+  AddPurchaseOrder:
+    handler: add_purchase_order.add_purchase_order 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  DeletePurchaseOrder:
+    handler: delete_purchase_order.delete_purchase_order 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  GetAllPurchaseOrder:
+    handler: get_all_purchase_order.get_all_purchase_order 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  SearchPurchaseOrder:
+    handler: search_purchase_order.search_purchase_order 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+  UpdatePurchaseOrder:
+    handler: upadte_purchase_order.upadte_purchase_order 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
+
+  ApproveRequest:
+    handler: approve_request.approve_request 
+    role: arn:aws:iam::</ac>:role/service-role/StepFunction_uc1_Requirement-role-2coy70yw
